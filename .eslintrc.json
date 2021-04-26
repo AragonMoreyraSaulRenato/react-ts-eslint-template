@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "quotes": [2, "single"],
+    "strict": [2, "never"],
+    "brace-style": "off",
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+    "exhaustive-deps": "off",
+    "max-len": ["error", 150, { "ignoreComments": true }],
+    "comma-dangle": ["error", { "functions": "never" }],
+    "arrow-parens": ["error", "always"],
+    "object-curly-newline": ["error", { "consistent": true }],
+    "implicit-arrow-linebreak": "off",
+    "no-confusing-arrow": "off",
+    "function-paren-newline": "off",
+    "import/extensions": ["error", "never", { "svg": "always" }],
+    "linebreak-style": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "camelcase": ["error", { "ignoreDestructuring": true }]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".ts", ".tsx", ".json", ".native.tsx"]
+      }
+    }
+  }
+}
